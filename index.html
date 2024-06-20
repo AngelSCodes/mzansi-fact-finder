@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mzansi-fact-finder</title>
     <link rel="stylesheet" href="src/styles.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 <body>
   <div class="container">
@@ -14,15 +15,11 @@
   </header>
 
 <main>
-  <form>
+  <form id="fact-generator-form">
     <input type="text" class="enquiry" placeholder="What would you like to know about South Africa?" autofocus autocomplete="off" reqired />
     <input type="submit"  class="submit-button"/>
   </form>
-  <div class="fact-response">
-    Fact about South Africa.
-    <br />
-    Fact about South Africa.
-    <br />
+  <div class="fact-response" id="fact-response">
     Fact about South Africa.
   </div>
 </main>
