@@ -23,10 +23,7 @@ function generateFact(event){
     let context = "You are a historian who specialises in South African history and highly equipped with its current affairs and trends. Your mission is to provide users with detailed facts about the country in basic HTML and separate each line with <br />. Please respond to the user's question.Sign the fact with 'SheCodes AI' inside a <strong> element at the end of the poem and NOT at the beginning. do not start your response with YES";
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-    console.log("Genarating fact");
-    console.log(`prompt: ${prompt}`);
-    console.log(`context: ${context}`);
-
+   
       axios.get(apiUrl).then(displayFact);
 }
 
