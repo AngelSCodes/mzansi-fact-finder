@@ -1,5 +1,5 @@
 body{
-    background-image: url("https://res.cloudinary.com/dwjmszkur/image/upload/v1718891222/South-Africa_lq1vuf.jpg");
+    background-image: url("https://res.cloudinary.com/dwjmszkur/image/upload/v1718987262/backgrounf_csxtus.jpg");
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken; 
@@ -28,14 +28,16 @@ h2{
     padding: 30px;
 }
 
-
-form{
+.form-container{
     padding: 15px;
     background-color: rgb(241, 233, 179);
     border-radius: 10px;
-    display: flex;
     margin-bottom: 30px;
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+}
+
+form{
+    display: flex;
 }
 
 .enquiry{
@@ -59,6 +61,17 @@ form{
     font-size: 16px;
 }
 
+.hint{
+    line-height: 1.5;
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 0.6;
+}
+
+.hidden{
+    display: none;
+}
+
 .fact-response{
     font-size: 15px;
     background-color: rgb(241, 233, 179);
@@ -80,3 +93,18 @@ a, strong{
     color: rgb(2,121,221);
 }
 
+
+.generating {
+    animation: blink-animation 1s steps(5, start) infinite;
+  }
+  
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
