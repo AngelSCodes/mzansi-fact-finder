@@ -6,6 +6,7 @@
     <title>mzansi-fact-finder</title>
     <link rel="stylesheet" href="src/styles.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -16,7 +17,7 @@
 
 <main>
   <form id="fact-generator-form">
-    <input type="text" class="enquiry" placeholder="What would you like to know about South Africa?" autofocus autocomplete="off" reqired />
+    <input type="text" class="enquiry" id="user-enquiry" placeholder="What would you like to know about South Africa?" autofocus autocomplete="off" reqired />
     <input type="submit"  class="submit-button"/>
   </form>
   <div class="fact-response" id="fact-response">
